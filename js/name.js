@@ -1,7 +1,7 @@
 const nameForm = document.querySelector(".js-name");
-const nameInput = nameForm.querySelector("input");
+const nameInput = nameForm.querySelector(".js-name > input");
 const greeting = document.querySelector(".js-greetings");
-const changeBtn = document.querySelector("button");
+const changeBtn = document.querySelector(".js-name-btn");
 
 const USER_LS = "currentUser";
 const SHOWING_CN = "showing";

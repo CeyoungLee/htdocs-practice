@@ -6,23 +6,24 @@ const changeBtn = document.querySelector(".js-name-btn");
 const USER_LS = "currentUser";
 const SHOWING_CN = "showing";
 
-function noSubmit(event){
+function noSubmit(event) {
     event.preventDefault();
     const currentValue = nameInput.value;
     paintGreeting(currentValue);    //she wasn't there, but she is now.
     saveName(currentValue);
 }
 
- function saveName(text){
+function saveName(text) {
     localStorage.setItem(USER_LS, text);
- }
+}
 
- function getName(){
-     nameForm.classList.add(SHOWING_CN);
-     nameForm.addEventListener("submit", noSubmit);
- }
+function getName() {
+    nameForm.classList.add(SHOWING_CN);
+    nameForm.addEventListener("submit", noSubmit);
+    changeBtn.classList.remove(SHOWING_CN);
+}
 
-function paintGreeting(text){
+function paintGreeting(text) {
     nameForm.classList.remove(SHOWING_CN);
     greeting.classList.add(SHOWING_CN);
     changeBtn.classList.add(SHOWING_CN);
@@ -30,30 +31,32 @@ function paintGreeting(text){
     changeButton();
 }
 
-function changeButton(){
+function changeButton() {
     changeBtn.addEventListener("click", changeName);
 }
 
-function changeName(){
+function changeName() {
     localStorage.removeItem(USER_LS);
-     greeting.classList.remove(SHOWING_CN);
-     nameInput.placeholder ="What is your name?";
+    greeting.classList.remove(SHOWING_CN);
+    nameForm.classList.add(SHOWING_CN);
+    changeBtn.classList.remove(SHOWING_CN);
+    nameInput.placeholder = "What is your name?";
     nameInput.value = "";
     init();
 }
 
-function loadName(){
+function loadName() {
     const currentUser = localStorage.getItem(USER_LS);
-    if(currentUser === null){
+    if (currentUser === null) {
         //she is not there
         getName();
-    }else{
+    } else {
         //she is already there
         paintGreeting(currentUser);
     }
 }
 
-function init(){
+function init() {
     loadName();
 }
 

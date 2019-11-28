@@ -30,13 +30,19 @@ form {
     display: none;
 }
 
+.js-name-btn {
+    display: none;
+}
+
 button {
     padding: 5px;
     margin: 2px 5px;
 }
-.js-name-btn{
-    display:none;
+
+.js-name-btn {
+    display: none;
 }
+
 .showing {
     display: block;
     margin: 10px auto;

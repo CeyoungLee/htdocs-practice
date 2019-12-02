@@ -39,7 +39,7 @@ form {
 
 .js-name-btn {
     display: none;
-    margin: 10px 45%;
+    margin: 10px auto;
     padding: 8px;
 }
 
@@ -57,6 +57,7 @@ body > div.toDoDiv {
 }
 
 ul {
+    display: none;
     list-style: none;
     background-color: rgba(220, 220, 220, 0.5);
     width: fit-content;

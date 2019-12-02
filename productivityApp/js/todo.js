@@ -24,6 +24,7 @@ function saveToDos() {
 }
 
 function paintToDo(text) {
+   // toDoList.parentElement.classList.add(SHOWING_CN);
     const li = document.createElement("li");
     const span = document.createElement("span");
     const delBtn = document.createElement("button");

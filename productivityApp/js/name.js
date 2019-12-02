@@ -18,7 +18,7 @@ function saveName(text) {
 }
 
 function getName() {
-    nameForm.classList.add(SHOWING_CN);
+    nameForm.classList.add("showing");
     nameForm.addEventListener("submit", noSubmit);
     changeBtn.classList.remove(SHOWING_CN);
 }

@@ -2,7 +2,6 @@
 * {
     padding: 0;
     margin: 0;
-    vertical-align: top;
     border: 0;
 }
 
@@ -12,14 +11,21 @@ html, body {
 }
 
 body {
+    padding: 0px;
     background-color: rgba(14, 17, 39, 0.6);
     position: relative;
 }
 
 div {
-    width: 100%;
     text-align: center;
     padding: 10px;
+    font-size: 25px;
+    margin: 0 auto;
+}
+
+div > h1 {
+    text-align: center;
+    margin: 0 auto;
 }
 
 input {
@@ -28,53 +34,50 @@ input {
 
 form {
     display: none;
+    margin: 0 auto;
 }
 
 .js-name-btn {
     display: none;
-}
-
-button {
-    padding: 5px;
-    margin: 2px 5px;
-}
-
-.js-name-btn {
-    display: none;
+    margin: 10px 45%;
+    padding: 8px;
 }
 
 .showing {
     display: block;
-    margin: 10px auto;
-    padding: 10px;
 }
 
 h4 {
+    width: 100%;
     display: none;
 }
 
-body > div:nth-child(1) > button {
-    display: none;
-}
-
-div > h1 {
-    text-align: center;
+body > div.toDoDiv {
+    width: auto;
 }
 
 ul {
     list-style: none;
-}
-
-body > div:nth-child(4) {
-    font-size: 30px;
+    background-color: rgba(220, 220, 220, 0.5);
+    width: fit-content;
+    margin: 0 auto;
+    padding: 1em;
 }
 
 li {
-    width: 300px;
-    background-color: rgba(220, 220, 220, 0.5);
-    margin: 0 auto;
+    min-width: 200px;
+    max-width: 850px;
 }
 
+li > button {
+    padding: 3px;
+    margin: 8px;
+}
+li>span{
+    display: inline-block;
+    width: -moz-fit-content;
+    word-break: break-word;
+}
 .bgImage {
     position: absolute;
     top: 0;

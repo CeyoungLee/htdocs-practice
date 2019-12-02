@@ -25,14 +25,14 @@ function saveToDos() {
 
 function paintToDo(text) {
     const li = document.createElement("li");
-    const delBtn = document.createElement("button");
     const span = document.createElement("span");
+    const delBtn = document.createElement("button");
     const newId = toDos.length + 1;
     delBtn.innerText = " X ";
     delBtn.addEventListener("click", deleteToDo);
     span.innerText = text;
-    li.appendChild(delBtn);
     li.appendChild(span);
+    li.appendChild(delBtn);
     li.id = newId;
     toDoList.appendChild(li);
     const toDoObj = {
@@ -46,8 +46,16 @@ function paintToDo(text) {
 function handleSubmit(event) {
     event.preventDefault();
     const currentValue = toDoInput.value;
-    paintToDo(currentValue);
-    toDoInput.value = "";
+    if (currentValue.length <= 40) {
+     //   if (toDoList.length <= 10) {
+            paintToDo(currentValue);
+            toDoInput.value = "";
+     //   }else{
+    //        alert("Too many To-dos!");
+        }
+    } else {
+        alert("Too long!");
+    }
 }
 
 function loadToDos() {

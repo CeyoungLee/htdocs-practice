@@ -35,7 +35,8 @@ function changeButton() {
     changeBtn.addEventListener("click", changeName);
 }
 
-function changeName() {
+function changeName(event) {
+    event.preventDefault();
     localStorage.removeItem(USER_LS);
     greeting.classList.remove(SHOWING_CN);
     nameForm.classList.add(SHOWING_CN);

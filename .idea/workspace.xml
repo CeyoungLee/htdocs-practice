@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f52540e5-6610-4b64-9739-4694d945aac6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/product.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/product.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/name.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/name.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/todo.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/todo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product.html" beforeDir="false" afterPath="$PROJECT_DIR$/product.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -85,8 +81,17 @@
       <workItem from="1574921712398" duration="5130000" />
       <workItem from="1574942957480" duration="2910000" />
       <workItem from="1575251487707" duration="655000" />
-      <workItem from="1575272632526" duration="4392000" />
+      <workItem from="1575272632526" duration="4464000" />
+      <workItem from="1575277483681" duration="6000" />
     </task>
+    <task id="LOCAL-00001" summary="fit-to-content ul/li box, a todo that is too long is forbidden">
+      <created>1575277306024</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1575277306024</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -104,6 +109,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fit-to-content ul/li box, a todo that is too long is forbidden" />
+    <option name="LAST_COMMIT_MESSAGE" value="fit-to-content ul/li box, a todo that is too long is forbidden" />
   </component>
   <component name="WindowStateProjectService">
     <state x="280" y="249" key="com.intellij.ide.util.TipDialog" timestamp="1574942974420">

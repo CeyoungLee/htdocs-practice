@@ -52,7 +52,7 @@ function handleSubmit(event) {
             toDoInput.value = "";
      //   }else{
     //        alert("Too many To-dos!");
-        }
+
     } else {
         alert("Too long!");
     }
